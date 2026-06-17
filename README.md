@@ -1,2 +1,2 @@
-# Portfolio-
+# Portfolio
 Lindsay Polaski Portfolio
