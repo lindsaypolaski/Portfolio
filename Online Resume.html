@@ -1,0 +1,490 @@
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  background-color: #a77d57;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center */
+.main {
+  max-width: 1300px;
+  margin: auto;
+}
+
+/* Title */
+h1 {
+  font-size: 40px;
+  text-align: center;
+  color:	#47352f;
+}
+h3 {
+    color: #a77d57;
+    font-size: 25px;
+    text-align: center;
+font-style: bold;}
+
+/* Buttons */
+.btn {
+  border: 	#eeeed1;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.btn:hover { background-color:#859f34; }
+
+.btn.active {
+  background-color: #769464;
+  color: white;
+}
+
+/* Grid */
+.row { margin: 10px -16px; }
+
+.column {
+  float: left;
+  width: 100%;
+  display: none;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  background-color: #eeeed1;
+  padding: 20px;
+  color: white;
+}
+
+.education .content {
+    width: auto;
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact .content {
+    width: auto;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Show active */
+.show { display: block; }
+
+h2 { color: #769464; }
+ul { color: #47352f;
+font-size: 18px; }
+
+ul2 { color: 	#769464;
+font-size: 18px; }
+
+p { color: #47352f;
+font-size: 18px; }
+
+p2 { color: #769464;
+font-size: 18px; }
+
+</style>
+</head>
+
+<body>
+
+<div class="main">
+
+<h1>
+<img src="https://lindsaypolaski.github.io/Portfolio/ProfilePicture.png" style="height:80px; vertical-align:middle;">
+Lindsay Polaski
+</h1>
+
+<hr>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('aboutme')"> About Me</button>
+  <button class="btn" onclick="filterSelection('projects')"> Academic Portfolio</button>
+  <button class="btn" onclick="filterSelection('education')"> Education Background</button>
+  <button class="btn" onclick="filterSelection('jobs')"> Job Experience </button>
+  <button class="btn" onclick="filterSelection('achievements')"> Skills & Achievements</button>
+  <button class="btn" onclick="filterSelection('contact')"> Contact Information</button>
+
+</div>
+
+<div class="row">
+
+
+
+
+
+
+
+<!-- ABOUT ME -->
+<div class="column aboutme show">
+<div class="content">
+
+<h2> About Me! </h2>
+<ul>
+	<p>Hi, I’m Lindsay Polaski. </p>
+	<p>I’m a Geography student with a focus on GIS and spatial analysis at University of Colorado, Colorado Springs. I have a strong interest in understanding how humans and environmental systems interact on a daily basis, mainly focusing on urban development while maintaining biodiversity and a clean environment. My work combines technical mapping skills with real-world problem solving. </p>
+
+	<p>Through my academic and personal projects, I’ve developed experience in: </p>
+<ul> 
+
+	<li>GIS and spatial analysis using GIS programs like ArcGIS Pro and Terrset2020</li>
+	<li>Data analysis and visualization</li>
+	<li>Remote sensing techniques (including NDVI and land cover classification)</li>
+	<li>Web mapping and basic web development (HTML, CSS)</li>
+	<li>Spatial research and project design using coding programs such as R </li>
+	<li>Data organization skills </li>
+	
+</ul>
+	<p>I’m especially interested in using GIS for real-world challenges, such as improving urban systems and analyzing environmental impacts. I enjoy using data and mapping to uncover patterns and support better decision-making. </p>
+<p>Feel free to explore my work and get in touch. </p>
+</ul>
+
+
+<h2> Objective </h2>
+<p> My goal is to build a career in Geography and Geographic Information Systems (GIS) where I can apply spatial technologies to address environmental and community challenges. Through continued education, research, and professional experience, I hope to contribute to projects that can help showcase my skills and passion for GIS. </p>
+
+<p>As I transition from a background in customer service and hospitality into the geospatial field, I aim to combine strong communication, teamwork, and problem-solving skills with technical expertise in GIS, remote sensing, and spatial analysis. I am committed to lifelong learning and seek opportunities to collaborate on projects that create meaningful impacts for both communities and the environment. </p>
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Past Projects -->
+<div class="column projects">
+<div class="content">
+
+<h3> Academic Portfolio </h3>
+<p>
+This page showcases a small collection of academic research and professional projects that demonstrate my skills in geography, environmental studies, GIS, remote sensing, data analysis, scientific writing, and visual communication. The projects featured below represent work completed throughout my academic career at the University of Colorado Colorado Springs and highlight my ability to communicate complex information through reports, presentations, maps, StoryMaps, and other visual media. Each project link will take you directly to the full report, presentation, StoryMap, or visual product, allowing you to explore the methods, findings, and communication techniques used in each project. If you are interested in seeing more work like this, reach out to me via my contact information. 
+</p>
+
+<p>
+Together, these works reflect my interests in environmental science, geospatial technology, conservation, emergency management, and spatial analysis while demonstrating my growth as both a researcher and communicator.
+</p>
+
+
+<h3> Communication Through Writing </h3>
+
+<h2> Sloping into Growth</h2>
+<ul>
+<p>This study looks at how slope characteristics can influence canopy asymmetry in Pinus Ponderosa at the University of Colorado Colorado Springs Austin Bluffs site. 47 different trees were measured for canopy radius, height, crown height, diameter, slope angle, slope aspect, and crown asymmetry using the Crown Asymmetry Index (CAI13). With this, data was processed in RStudio using a correlation test to show the weak, non-significant relationship between slope angle (r= 0.08, p=0.59) and slope aspect (r=0.09, p=0.56) with crown asymmetry. However, with further research, an outlier in the data was heavily influencing the overall correlation results. Tree ID 76 had a large influence on the overall correlation. After removing tree ID 76, the correlation changes significantly (with a new R value of -0.12). This confirmed that slope does not influence canopy in ponderosa pines in the UCCS campus on Austin Bluffs. This proves that other factors (possible wind exposure, competition, or branch loss) may have a role in shaping the tree’s canopy.</p>
+
+<p><a href='https://docs.google.com/document/d/1YcpsSQLYdkapfXGNaxi54EvdMxc0O154-xBvUJXNZTA/edit?usp=sharing'>Sloping into Growth Report</a></p>
+</ul>
+
+
+
+
+<h2> From Desert to City</h2>
+<ul>
+<p>This study examines how land cover change in Las Vegas, Nevada, from 1990 to 2020 has contributed to the increase of the Urban Heat Island (UHI) effect. Using multi-temporal Landsat imagery (Landsat 5, 7, and 8) and analysis conducted in TerrSet 2020, this research integrates unsupervised land cover classification, Normalized Difference Vegetation Index (NDVI), and thermal band data to evaluate urban expansion, vegetation loss, and surface temperature change over time. Results indicate substantial growth in residential and commercial land use, accompanied by a decline in vegetation and open desert areas.
+
+NDVI analysis revealed an overall reduction in vegetation between 1990 and 2001, with an apparent increase by 2020 likely influenced by sensor differences rather than actual ecological recovery. Thermal analysis showed a consistent rise in surface temperatures, with increases of approximately 31°F between 1990 and 2001 and an additional 13°F by 2020. Areas experiencing the most significant urban expansion also exhibited the highest temperature increases, supporting the relationship between impervious surfaces and heat retention.
+
+The results demonstrate a strong correlation between urban sprawl, vegetation loss, and increasing surface temperatures, confirming the role of land cover change in intensifying the UHI effect in arid environments. Despite limitations related to classification methods and temporal gaps in data, this study highlights the effectiveness of remote sensing techniques for analyzing long-term environmental change and provides insight for future urban planning and sustainability efforts. </p>
+<p><a href='https://docs.google.com/document/d/14KA3fX99ThgFfojWA9Lm12-Ld62o_Yk5YmTmN42TtVQ/edit?usp=sharing'>From Desert to City Report</a></p>
+<p><a href='https://docs.google.com/presentation/d/1_yBgF2FrIWl7aOGkcV-fNaWGIng1c8cL-VmKqjy5LBI/edit?usp=sharing'>From Desert to City Slide Deck</a></p>
+</ul>
+
+<h3> Communication Through ArcGIS Story Maps</h3>
+
+<h2> </h2>
+<ul>
+<p>This project explores how different types of urban land use, ranging from highly developed areas to natural green spaces, affect animal diversity within the Fountain Creek Watershed in Colorado Springs. Through field observations, species counts, and spatial analysis, I found that areas with more vegetation, connectivity, and lower human disturbance support greater biodiversity, while heavily developed spaces limit wildlife presence to only the most adaptable species. This project highlights the importance of sustainable urban planning that integrates green spaces and protects natural habitats. By showing how biodiversity responds to land use, it emphasizes the need for cities to balance development with ecological health. Promoting connected, diverse green spaces not only supports wildlife but also enhances ecosystem services and human well-being, contributing to a more sustainable and resilient urban environment.</p>
+
+
+<p><a href='https://arcg.is/0WKrGG0'>Patches of Life Story Map Link</a></p>
+</ul>
+
+
+
+
+<h3> Communication Through Visuals </h3>
+
+<h2>How GIS is Used in Emergency Management Careers</h2>
+
+<ul>
+<p>PowerPoint presentations are important visual tools because they help organize information in a clear, structured, and engaging way. Instead of relying only on spoken words, PowerPoints allow presenters to support their message with visuals such as images, charts, graphs, and keywords. This combination of visual and verbal communication improves audience understanding and makes complex information easier to process. Many people learn better through visual aids, so PowerPoints can increase comprehension and retention by reinforcing key ideas in multiple ways. Another reason PowerPoints are important is that they help keep both the speaker and the audience focused. For the speaker, slides act as a guide to ensure that main points are covered in a logical order without forgetting important details. For the audience, slides provide a roadmap of the presentation, making it easier to follow along and understand how ideas connect. This structure is especially useful when presenting data-heavy or technical topics, where too much spoken information alone could become overwhelming. </p>
+<p><a href='https://uccs1.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b6543e7a-ce62-4b2d-bffd-b426000595be'>Presentation Video Link</a></p>
+
+</ul>
+
+<h2>Maps </h2>
+
+<ul>
+<p>The intended purpose of my posters is to visually communicate spatial patterns of land cover change and environmental impact in an easy-to-understand format. Unlike text or numerical data alone, a map allows viewers to quickly identify where trends are occurring and how they are distributed across a region. In a presentation setting, this type of visual aid is especially effective because it helps the audience grasp complex geographic information at a glance, making it easier to follow key points about important roads, vegetation loss, temperature variation, and flood planes. </p>
+
+<p> When designing the maps, I focused on several important visual elements, including color, alignment, and clarity. Color choice was especially important, as I used intuitive color schemes (such as reds for higher heat or danger zones) to make the data more readable. I also ensured that the legend, title, and map elements were clearly aligned and spaced to avoid clutter. Simplicity was a key priority, as too much information can overwhelm the viewer and reduce the effectiveness of the map. </p>
+
+<p> I created these visual aids using GIS software, specifically ArcGIS Pro and used RStudio for the correlation charts. One major advantage of this tool is its ability to handle complex spatial data and produce highly detailed and accurate maps. It also offers strong customization options for symbology and layout. However, a limitation of ArcGIS Pro is that it can be time-consuming to learn and requires careful attention to detail when formatting outputs. Despite this, it is a powerful tool for creating professional-quality visualizations.</p>
+
+<iframe
+src="https://lindsaypolaski.github.io/Portfolio/The%20Greener%20the%20Cheaper.pdf"
+width="100%"
+height="400px">
+</iframe>
+
+<iframe
+src="https://lindsaypolaski.github.io/Portfolio/Accessibility%20to%20Emergency%20Evacuation%20Routes.pdf"
+width="100%"
+height="400">
+</iframe>
+
+
+</ul> 
+
+</div>
+</div>
+
+<!-- Education -->
+<div class="column education">
+<div class="content">
+
+<h2>Education Background</h2>
+
+<p>University of Colorado Colorado Springs, Colorado Springs, CO. (2024-2026) </p>
+<ul2> 
+<li> Bachelor of Arts in Geography and Environmental Studies (GES) </li>
+<li> Undergraduate Certificate in Geographic Information Science (GIScience) </li>
+
+</ul2> 
+
+
+</ul2> 
+<p>Pikes Peak State College, Colorado Springs, CO. (2021-2024) </p>
+<ul2> 
+<li> Associate of Science </li>
+<li> Associate of Arts - Geography </li>
+
+
+
+<p>CIVA Charter High School, Colorado Springs, CO. (2017-2021) </p>
+<ul2>
+<li> High School Diploma </li>
+
+</ul2>
+
+
+</ul>
+
+</div>
+</div>
+
+
+
+<!-- ACHIEVEMENTS -->
+<div class="column achievements">
+<div class="content">
+
+<h2>Achievements</h2>
+<ul>
+<p> A current member of the Phi Theta
+Kappa (PTK) Honor Society for
+academic achievement at PPSC. </p>
+<p> A current member of NSLS
+(National Society of Leadership
+and Success) as of 2025 for
+academic achievement at UCCS. </p>
+<p> Earned "Outstanding Student Award GIScience: May 2026" in the Department of Geography and Environmental Studies from College of Letters, Arts & Sciences at UCCS. </p>
+</ul>
+
+<h2>Community Service</h2>
+<ul>
+<p> Happy Cats Haven: Manitou
+Springs: Fostering cats and
+cleaning facility cages. </p>
+<p> Care and Share: Colorado
+Springs: Volunteer work at the
+Sunnyside Market Food Bank at
+Pikes Peak Elementary School. </p>
+</ul>
+
+<h2>Relevant Skills </h2>
+<ul>
+<p> Group leadership and activity
+facilitation </p>
+<p> Strong communication and public
+interaction skills </p>
+<p> Time management and
+multitasking</p>
+<p> Interest in environmental education</p>
+
+
+
+</ul>
+
+
+</div>
+</div>
+
+</div>
+</div>
+
+
+<!-- Current Work History -->
+<div class="column jobs">
+<div class="content">
+
+<h3>Job Experience (Explanation)</h3>
+
+<p>
+My professional experience has primarily been in customer service and hospitality, where I have worked in fast-paced environments that required strong communication, adaptability, problem-solving, and teamwork skills. As a server, I have developed the ability to manage multiple responsibilities simultaneously while maintaining a high level of customer satisfaction and professionalism.
+</p>
+
+<p>
+Alongside my work experience, I am actively building a career in Geography and Geographic Information Systems (GIS). Through academic research, independent projects, and volunteer opportunities, I continue to expand my technical skills in spatial analysis, cartography, remote sensing, and environmental studies. I have participated in GIS-related projects, including my GIS GMF project, and I am eager to collaborate with professors, researchers, and community organizations on future geospatial initiatives.
+</p>
+
+<p>
+My long-term goal is to combine my strong communication skills, environmental science background, and GIS expertise to contribute to meaningful projects.
+</p>
+
+<h3>Job Experience</h3>
+<h2>Server, Bubba’s 33, Colorado Springs, Colorado—April 2026- Current.</h2>
+
+<ul>
+<li> Excel in a fast-paced environment by managing multiple tasks while maintaining high-
+quality customer service. </li>
+<li> Adapt quickly to changing demands and provide friendly, personalized experiences that
+make every guest feel welcome and valued. </li>
+</ul>
+
+
+<h2>GIS & Field Data Collection Intern, Green Mountain Falls, Colorado.—
+April 2026 -June 2026</h2>
+
+<ul>
+<li>Developed and managed GIS data for hiking trail mapping using AcGIS Online and
+ArcGIS Field Maps</li>
+<li> Processed, standardized, and cleaned high-accurate spatial data for trail datasets for
+COTREX and hard-copy mapping systems printed for the town.</li>
+</ul>
+
+
+<h2>Server/Bartender, Rock Bottom Restaurant and Brewery, Colorado
+Springs, Colorado—May 2023-April 2026.</h2>
+
+<ul>
+<li> Delivered customer-focused service while managing fast-paced environments. </li>
+<li> Prepared and served beverages while adhering to safety and legal regulations.</li>
+<li> Communicated effectively with guests to provide recommendations and ensure
+positive experiences.</li>
+<li> Coordinated with team members to maintain efficient service and smooth daily
+operations.</li>
+<li> Maintained clean, organized, and safe dining and bar areas.</li>
+</ul>
+
+<h2>Server/ Culinary Assistant, Cheddar's Scratch Kitchen, Colorado Springs,
+Colorado— August 2021-May 2022</h2>
+
+<ul>
+<li> Collaborated with team members to maintain efficient service operations. </li>
+<li> Assisted with food preparation in fast-paced environments.</li>
+<li> Managed multiple responsibilities, including guest service and kitchen support.</li>
+</ul>
+
+<h2>Multi-role Team Member, Main Event, Colorado Springs, Colorado—
+March 2021- February 2023</h2>
+
+<ul>
+<li> Supervised large groups of guests in entertainment settings (bowling lanes, laser tag,
+and billiards). </li>
+<li> Provided clear communication and coordination between team members during fast-
+paced shifts.</li>
+<li>Maintained safe environments for guests.</li>
+<li> Adapted quickly in an understaffed situation, independently managing up to 32 lanes
+at a time.</li>
+</ul>
+
+
+<h2>Party Host and Gymnastics Coach, Trampoline World, Colorado Springs,
+Colorado—February 2019- April 2020</h2>
+
+<ul>
+<li> Facilitated group activities and games for children from ages preschool to middle/high
+school. </li>
+<li> Coordinated and supervised children’s birthday parties, ensuring safe participation in
+trampoline activities.</li>
+<li> Communicated rules and safety procedures clearly to kids and parents.</li>
+<li> Managed event schedules and coordinated transitions between activities.</li>
+</ul>
+
+
+
+</div>
+</div>
+
+
+
+<!-- contact info-->
+<div class="column contact">
+<div class="content">
+
+<h2> Contact Information </h2>
+
+
+<p><strong>Phone:</strong> (719) 209-5595</p>
+<p><strong>Email:</strong>
+<a href="mailto:lindsaypolaski@gmail.com">
+lindsaypolaski@gmail.com
+</a></p>
+<p><strong>Location:</strong> Colorado Springs, Colorado</p>
+
+</div>
+</div>
+
+</div>
+</div>
+
+
+<script>
+filterSelection("aboutme")
+
+function filterSelection(c) {
+  var x = document.getElementsByClassName("column");
+  for (var i = 0; i < x.length; i++) {
+    x[i].classList.remove("show");
+    if (x[i].className.indexOf(c) > -1) {
+      x[i].classList.add("show");
+    }
+  }
+}
+
+var btns = document.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].classList.remove("active");
+    this.classList.add("active");
+  });
+}
+</script>
+
+</body>
+</html>
